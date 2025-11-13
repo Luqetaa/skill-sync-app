@@ -1,16 +1,65 @@
-# React + Vite
+# SkillSync AI - Global Solution 2025 (Front-End)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Resumo do Projeto
 
-Currently, two official plugins are available:
+Este projeto é a entrega da Global Solution de Front-End Design & Web Development do 2º Semestre.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O tema proposto, "O Futuro do Trabalho", foi interpretado através da criação do **SkillSync AI**, uma plataforma web focada em conectar profissionais, incentivar o desenvolvimento de competências e facilitar a transição de carreira (reskilling/upskilling).
 
-## React Compiler
+Esta aplicação é uma Single Page Application (SPA) construída com **React** e estilizada com **Tailwind CSS**. Ela simula uma rede profissional (similar ao LinkedIn) onde é possível explorar um "Pool de Talentos", filtrar por habilidades e visualizar perfis detalhados em uma modal interativa.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 👥 Integrantes do Grupo
 
-## Expanding the ESLint configuration
+* **Lucas Cavalcante** - RM 562857
+* **Matheus Rodrigues** - RM 561689
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features Implementadas
+
+Este projeto cumpre todos os requisitos obrigatórios da atividade:
+
+* **Listagem de Perfis:** Perfis carregados dinamicamente de um arquivo `perfis.json` local.
+* **Cards de Perfil:** Apresentação limpa com nome, foto, cargo e principais *skills*.
+* **Modal Interativa:** Ao clicar em um card, uma modal exibe dados detalhados do profissional, organizada por abas (Visão Geral, Habilidades, Experiência, etc.).
+* **Botões Funcionais:** Botões de "Recomendar" e "Enviar Mensagem" dentro da modal com feedback visual (`alert`).
+* **Sistema de Filtros:** Filtros funcionais para busca por texto (nome/cargo), Área e Localização.
+* **Filtros Dinâmicos:** As opções de filtro de "Área" e "Localização" são geradas automaticamente a partir dos dados do JSON, sem valores duplicados.
+* **Design Responsivo:** A aplicação se adapta a diferentes tamanhos de tela (mobile, tablet, desktop) usando Tailwind CSS.
+* **Dark Mode:** Um seletor de tema (Light/Dark) funcional e persistente (salva no `localStorage`), implementado inteiramente com lógica de estado do React, sem o uso da variante `dark:` do Tailwind.
+
+## 🔐 Usuários e Senhas
+
+Não se aplica. A aplicação é de acesso público e não possui sistema de login ou autenticação.
+
+## 🛠️ Instalação e Execução do Projeto
+
+Para rodar este projeto localmente, siga os passos abaixo:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [LINK-DO-SEU-REPOSITORIO-AQUI]
+    ```
+
+2.  **Acesse a pasta do projeto:**
+    ```bash
+    cd nome-da-pasta-do-projeto
+    ```
+
+3.  **Instale as dependências:**
+    (É necessário ter o Node.js instalado)
+    ```bash
+    npm install
+    ```
+    *Este comando instalará o React, `react-icons` e outras dependências necessárias.*
+
+4.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Abra no navegador:**
+    Acesse `http://localhost:5173` (ou a porta indicada no seu terminal) para visualizar a aplicação.
+
+## 🌐 Links do Projeto
+
+* **Link do Repositório:** `[COLOQUE O LINK DO SEU REPOSITÓRIO DO GITHUB AQUI]`
+* **Link do Deploy (Vercel/Netlify):** `[COLOQUE O LINK DO SEU DEPLOY AQUI]`
