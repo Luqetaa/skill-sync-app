@@ -8,25 +8,6 @@ import React from 'react';
 //
 const ProfileCard = ({ profile, theme, onCardClick }) => {
 
-  // --- 1. Lógica das Classes Condicionais ---
-
-  const cardClasses = theme === 'dark'
-    ? 'bg-gray-800 border-gray-700 hover:bg-gray-700' // Classes Dark
-    : 'bg-white border-gray-200 hover:bg-gray-50';   // Classes Light
-
-  const nameClasses = theme === 'dark'
-    ? 'text-white'
-    : 'text-gray-900';
-
-  const cargoClasses = theme === 'dark'
-    ? 'text-gray-400'
-    : 'text-gray-600';
-
-  const tagClasses = theme === 'dark'
-    ? 'bg-blue-900 text-blue-200'
-    : 'bg-blue-100 text-blue-800';
-
-  // --- 2. Lógica dos Dados ---
   // Pega apenas as 3 primeiras habilidades técnicas para exibir no card
   const mainSkills = profile.habilidadesTecnicas.slice(0, 3);
 
@@ -36,11 +17,11 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
       // Passamos o 'profile' de volta para a função saber quem foi clicado
       onClick={() => onCardClick(profile)}
       className={`
-        w-full p-5 rounded-lg border shadow-md text-left 
+        w-67 p-5 rounded-2xl border shadow-md text-left 
         transition-all duration-200 ease-in-out
-        transform hover:-translate-y-1 focus:outline-none 
-        focus:ring-2 focus:ring-blue-500
-        ${cardClasses}
+        transform hover:-translate-y-1 focus:outline-none
+        focus:ring-2 focus:ring-(--primary) h-86
+        bg-(--container) border-(--border-color) hover:bg-(--container)/20
       `}
     >
       <div className="flex flex-col items-center text-center">
@@ -48,16 +29,16 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
         <img
           src={profile.foto}
           alt={`Foto de ${profile.nome}`}
-          className="w-24 h-24 rounded-full object-cover border-4 border-gray-300"
+          className="w-30 h-30 rounded-full object-cover border-2 border-(--border-color)"
         />
 
         {/* Nome  */}
-        <h3 className={`mt-4 text-xl font-bold ${nameClasses}`}>
+        <h3 className={`mt-4 text-xl font-bold text-(--text)`}>
           {profile.nome}
         </h3>
 
         {/* Cargo  */}
-        <p className={`mt-1 text-sm ${cargoClasses}`}>
+        <p className={`mt-1 text-sm text-(--text2)`}>
           {profile.cargo}
         </p>
 
@@ -66,7 +47,7 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
           {mainSkills.map((skill) => (
             <span
               key={skill}
-              className={`px-3 py-1 rounded-full text-xs font-semibold ${tagClasses}`}
+              className={`px-3 scale-100 py-1 rounded-full text-sm font-semibold bg-(--secondary) text-(--primary)`}
             >
               {skill}
             </span>
