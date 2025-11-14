@@ -1036,5 +1036,1030 @@
       { "idioma": "Inglês", "nivel": "Avançado" }
     ],
     "areaInteresses": ["API Security", "API Governance", "Microservices"]
+  },
+  {
+    "id": 31,
+    "nome": "Henrique Bastos",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Python Pleno",
+    "resumo": "Focado em automação de processos e análise de dados com Python.",
+    "localizacao": "Xique-Xique/BA",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Python", "Pandas", "Flask", "SQL", "Git"],
+    "softSkills": ["Resolução de Problemas", "Automação", "Curiosidade"],
+    "experiencias": [
+      {
+        "empresa": "DataMiners",
+        "cargo": "Desenvolvedor Python Pleno",
+        "inicio": "2021-02",
+        "fim": "Atual",
+        "descricao": "Criação de scripts de automação e pipelines de dados."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Sistemas de Informação",
+        "instituicao": "UNEB",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Python for Data Science"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Intermediário" }
+    ],
+    "areaInteresses": ["Data Science", "Automação", "IA"]
+  },
+  {
+    "id": 32,
+    "nome": "Júlia Magalhães",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Engenheira de Redes",
+    "resumo": "Especialista em infraestrutura de redes e segurança cibernética.",
+    "localizacao": "Florianópolis/SC",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["Cisco", "Roteamento", "Firewall", "VPN", "Linux"],
+    "softSkills": ["Pensamento Crítico", "Segurança", "Organização"],
+    "experiencias": [
+      {
+        "empresa": "SecureNet",
+        "cargo": "Engenheira de Redes Sênior",
+        "inicio": "2018-01",
+        "fim": "Atual",
+        "descricao": "Planejamento e implementação de arquiteturas de rede seguras."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Telecomunicações",
+        "instituicao": "UFSC",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["CCNA", "CISSP"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Segurança da Informação", "Redes 5G", "Cloud Networking"]
+  },
+  {
+    "id": 33,
+    "nome": "Leonardo Moreira",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Analista de Suporte Técnico",
+    "resumo": "Experiência em suporte a sistemas e atendimento ao cliente (Nível 2 e 3).",
+    "localizacao": "Cuiabá/MT",
+    "area": "Suporte",
+    "habilidadesTecnicas": ["Windows Server", "Active Directory", "SQL", "Zendesk", "ITIL"],
+    "softSkills": ["Comunicação", "Paciência", "Didática", "Resolução de Problemas"],
+    "experiencias": [
+      {
+        "empresa": "HelpTech",
+        "cargo": "Analista de Suporte Sênior",
+        "inicio": "2019-06",
+        "fim": "Atual",
+        "descricao": "Suporte especializado para clientes B2B e gestão de incidentes."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Tecnólogo em Redes de Computadores",
+        "instituicao": "IFMT",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["ITIL Foundation"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Técnico" }
+    ],
+    "areaInteresses": ["Atendimento ao Cliente", "Gestão de TI", "Infraestrutura"]
+  },
+  {
+    "id": 34,
+    "nome": "Michele Bastos",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedora Mobile Júnior",
+    "resumo": "Entusiasta de desenvolvimento mobile, com foco em Flutter.",
+    "localizacao": "Palmas/TO",
+    "area": "Desenvolvimento Mobile",
+    "habilidadesTecnicas": ["Flutter", "Dart", "Firebase", "Git", "API REST"],
+    "softSkills": ["Aprendizado Rápido", "Criatividade", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "AppNorte",
+        "cargo": "Estagiária de Desenvolvimento Mobile",
+        "inicio": "2023-01",
+        "fim": "2023-12",
+        "descricao": "Desenvolvimento de interfaces e integração com APIs em Flutter."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "instituicao": "Unitins",
+        "ano": 2024
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Flutter Development Bootcamp"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Intermediário" }
+    ],
+    "areaInteresses": ["UX/UI Mobile", "Flutter", "Novas Tecnologias"]
+  },
+  {
+    "id": 35,
+    "nome": "Nilson Pereira",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Engenheiro de Hardware",
+    "resumo": "Especialista em design de circuitos e sistemas embarcados.",
+    "localizacao": "Porto Velho/RO",
+    "area": "Hardware",
+    "habilidadesTecnicas": ["VHDL", "Verilog", "Altium Designer", "C++", "IoT"],
+    "softSkills": ["Atenção ao Detalhe", "Pensamento Analítico", "Inovação"],
+    "experiencias": [
+      {
+        "empresa": "ChipDesign",
+        "cargo": "Engenheiro de Hardware",
+        "inicio": "2017-05",
+        "fim": "Atual",
+        "descricao": "Projeto de PCBs e desenvolvimento de firmware para dispositivos IoT."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia Elétrica",
+        "instituicao": "UNIR",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Altium Designer Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Sistemas Embarcados", "IoT", "Design de Circuitos"]
+  },
+  {
+    "id": 36,
+    "nome": "Otávio Bernardes",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Tech Lead",
+    "resumo": "Líder técnico focado em arquitetura de microsserviços e desenvolvimento de equipes.",
+    "localizacao": "São Paulo/SP",
+    "area": "Liderança Técnica",
+    "habilidadesTecnicas": ["Node.js", "React", "AWS", "Microserviços", "Liderança"],
+    "softSkills": ["Mentoria", "Comunicação", "Visão Estratégica", "Gestão de Conflitos"],
+    "experiencias": [
+      {
+        "empresa": "ScaleUp Tech",
+        "cargo": "Tech Lead",
+        "inicio": "2020-01",
+        "fim": "Atual",
+        "descricao": "Liderança da tribo de pagamentos, definição de arquitetura e mentoria."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciência da Computação",
+        "instituicao": "UNICAMP",
+        "ano": 2015
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["AWS Solutions Architect", "Certified ScrumMaster"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Arquitetura de Software", "Gestão de Pessoas", "DevOps"]
+  },
+  {
+    "id": 37,
+    "nome": "Patricia Guedes",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Developer Relations (DevRel)",
+    "resumo": "Especialista em criar comunidades e engajar desenvolvedores.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "DevRel",
+    "habilidadesTecnicas": ["Public Speaking", "Technical Writing", "Comunidade", "JavaScript", "APIs"],
+    "softSkills": ["Comunicação", "Empatia", "Networking", "Criatividade"],
+    "experiencias": [
+      {
+        "empresa": "API First",
+        "cargo": "DevRel Manager",
+        "inicio": "2019-08",
+        "fim": "Atual",
+        "descricao": "Criação de documentação, palestras e engajamento com a comunidade dev."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Comunicação Social",
+        "instituicao": "UFRJ",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Community Management Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Comunidade", "Open Source", "Educação Tecnológica"]
+  },
+  {
+    "id": 38,
+    "nome": "Ricardo Nobre",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Engenheiro de Machine Learning",
+    "resumo": "Foco em MLOps e implementação de modelos de IA em produção.",
+    "localizacao": "Recife/PE",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Python", "TensorFlow", "Kubeflow", "Docker", "MLOps"],
+    "softSkills": ["Pensamento Analítico", "Resolução de Problemas", "Automação"],
+    "experiencias": [
+      {
+        "empresa": "AI Solutions",
+        "cargo": "ML Engineer",
+        "inicio": "2020-03",
+        "fim": "Atual",
+        "descricao": "Colocar modelos de machine learning em produção e monitorá-los."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Mestrado em Ciência da Computação (IA)",
+        "instituicao": "UFPE",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Google Cloud ML Engineer", "TensorFlow Developer Certificate"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["MLOps", "Deep Learning", "Processamento de Linguagem Natural"]
+  },
+  {
+    "id": 39,
+    "nome": "Simone Andrade",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Designer de Interação (IxD)",
+    "resumo": "Focada em fluxos de usuário e microinterações.",
+    "localizacao": "Curitiba/PR",
+    "area": "Design",
+    "habilidadesTecnicas": ["Figma", "Microinterações", "Fluxos de Usuário", "Testes de Usabilidade", "Adobe After Effects"],
+    "softSkills": ["Empatia", "Criatividade", "Atenção ao Detalhe", "Comunicação Visual"],
+    "experiencias": [
+      {
+        "empresa": "UX Studio",
+        "cargo": "Interaction Designer",
+        "inicio": "2019-01",
+        "fim": "Atual",
+        "descricao": "Desenho de fluxos e prototipagem de alta fidelidade."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Design Digital",
+        "instituicao": "UTFPR",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Interaction Design Foundation Member"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Design de Interação", "UX", "Microinterações"]
+  },
+  {
+    "id": 40,
+    "nome": "Thiago Ventura",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Go (Golang)",
+    "resumo": "Desenvolvedor backend com foco em alta performance e concorrência.",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Go", "Gin", "gRPC", "Docker", "PostgreSQL"],
+    "softSkills": ["Performance", "Lógica", "Eficiência", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "HighPerf",
+        "cargo": "Backend Developer",
+        "inicio": "2020-07",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de microsserviços de alta performance em Go."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Computação",
+        "instituicao": "UFMG",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Go (Golang) Specialization"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Sistemas Distribuídos", "Alta Performance", "Cloud Native"]
+  },
+  {
+    "id": 41,
+    "nome": "Victor Hugo",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Engenheiro de Dados",
+    "resumo": "Especialista em pipelines de dados e arquitetura de Data Lakes.",
+    "localizacao": "Salvador/BA",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Spark", "Airflow", "Python", "SQL", "AWS Glue"],
+    "softSkills": ["Organização", "Pensamento Analítico", "Automação", "Escalabilidade"],
+    "experiencias": [
+      {
+        "empresa": "DataFlow",
+        "cargo": "Engenheiro de Dados Pleno",
+        "inicio": "2019-02",
+        "fim": "Atual",
+        "descricao": "Criação e manutenção de pipelines de ETL/ELT."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciência da Computação",
+        "instituicao": "UFBA",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["AWS Data Analytics Specialty"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Big Data", "Arquitetura de Dados", "Processamento Distribuído"]
+  },
+  {
+    "id": 42,
+    "nome": "Alice Braga",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedora Ruby on Rails",
+    "resumo": "Focada em desenvolvimento backend ágil com Rails.",
+    "localizacao": "Campinas/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Ruby", "Rails", "PostgreSQL", "RSpec", "Sidekiq"],
+    "softSkills": ["Agilidade", "Comunicação", "Produtividade", "Testes Automatizados"],
+    "experiencias": [
+      {
+        "empresa": "AgileDev",
+        "cargo": "Desenvolvedora Backend Sênior",
+        "inicio": "2017-10",
+        "fim": "Atual",
+        "descricao": "Manutenção e desenvolvimento de novas features em sistemas Rails."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Sistemas de Informação",
+        "instituicao": "PUC-Campinas",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Ruby on Rails Development"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Desenvolvimento Ágil", "TDD", "Startups"]
+  },
+  {
+    "id": 43,
+    "nome": "Breno Medeiros",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Analista de BI (Business Intelligence)",
+    "resumo": "Especialista em Power BI e criação de dashboards estratégicos.",
+    "localizacao": "Vitória/ES",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Power BI", "DAX", "SQL Server", "ETL", "Tableau"],
+    "softSkills": ["Visão de Negócio", "Comunicação de Dados", "Análise Crítica"],
+    "experiencias": [
+      {
+        "empresa": "Insights Corp",
+        "cargo": "Analista de BI Sênior",
+        "inicio": "2018-05",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de dashboards para diretoria e análise de KPIs."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Administração de Empresas",
+        "instituicao": "UFES",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Microsoft Certified: Data Analyst Associate (PL-300)"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Intermediário" }
+    ],
+    "areaInteresses": ["Business Intelligence", "Data Visualization", "Estratégia"]
+  },
+  {
+    "id": 44,
+    "nome": "Clara Furtado",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "UX Researcher",
+    "resumo": "Focada em pesquisa qualitativa e quantitativa para produtos digitais.",
+    "localizacao": "São Paulo/SP",
+    "area": "Design",
+    "habilidadesTecnicas": ["User Research", "Entrevistas", "Testes de Usabilidade", "Jornada do Usuário", "Personas"],
+    "softSkills": ["Empatia", "Escuta Ativa", "Análise Crítica", "Comunicação"],
+    "experiencias": [
+      {
+        "empresa": "People First",
+        "cargo": "UX Researcher Pleno",
+        "inicio": "2020-02",
+        "fim": "Atual",
+        "descricao": "Condução de pesquisas para identificar dores e oportunidades."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Psicologia",
+        "instituicao": "USP",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Nielsen Norman Group UX Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["UX Research", "Design Thinking", "Psicologia Cognitiva"]
+  },
+  {
+    "id": 45,
+    "nome": "Diego Marques",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor C# (.NET)",
+    "resumo": "Desenvolvedor backend sênior especializado em ecossistema .NET.",
+    "localizacao": "Joinville/SC",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["C#", ".NET Core", "ASP.NET", "SQL Server", "Azure"],
+    "softSkills": ["Lógica", "Performance", "Manutenção de Código", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "DotNet Experts",
+        "cargo": "Desenvolvedor .NET Sênior",
+        "inicio": "2016-06",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de sistemas robustos para o setor financeiro."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciência da Computação",
+        "instituicao": "Univille",
+        "ano": 2015
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Microsoft Certified: Azure Developer Associate"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": [".NET", "Arquitetura de Software", "Azure"]
+  },
+  {
+    "id": 46,
+    "nome": "Ester Matos",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "UX Writer",
+    "resumo": "Especialista em microcopy, tom de voz e estratégia de conteúdo.",
+    "localizacao": "Florianópolis/SC",
+    "area": "Design",
+    "habilidadesTecnicas": ["UX Writing", "Microcopy", "Tom de Voz", "Copywriting", "Figma"],
+    "softSkills": ["Comunicação", "Empatia", "Criatividade", "Atenção ao Detalhe"],
+    "experiencias": [
+      {
+        "empresa": "WordFlow",
+        "cargo": "UX Writer Pleno",
+        "inicio": "2020-09",
+        "fim": "Atual",
+        "descricao": "Definição do tom de voz e criação de todo o conteúdo da interface."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Jornalismo",
+        "instituicao": "UFSC",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["UX Writing Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Design de Conteúdo", "Acessibilidade", "Branding"]
+  },
+  {
+    "id": 47,
+    "nome": "Fábio Nunes",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor PHP",
+    "resumo": "Especialista em Laravel e desenvolvimento de APIs REST com PHP.",
+    "localizacao": "Goiânia/GO",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["PHP", "Laravel", "Symfony", "MySQL", "Docker"],
+    "softSkills": ["Resolução de Problemas", "Manutenção de Código", "Performance"],
+    "experiencias": [
+      {
+        "empresa": "PHP Solutions",
+        "cargo": "Desenvolvedor PHP Sênior",
+        "inicio": "2017-03",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento e manutenção de sistemas legados e novos projetos em Laravel."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Software",
+        "instituicao": "UFG",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Zend Certified PHP Engineer", "Laravel Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Intermediário" }
+    ],
+    "areaInteresses": ["PHP", "Laravel", "APIs REST"]
+  },
+  {
+    "id": 48,
+    "nome": "Gabriela Viana",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Growth Hacker",
+    "resumo": "Especialista em marketing orientado a dados e experimentos rápidos.",
+    "localizacao": "São Paulo/SP",
+    "area": "Marketing Digital",
+    "habilidadesTecnicas": ["Growth Hacking", "SEO", "Analytics", "Testes A/B", "SQL"],
+    "softSkills": ["Criatividade", "Pensamento Analítico", "Agilidade", "Curiosidade"],
+    "experiencias": [
+      {
+        "empresa": "Growth Co.",
+        "cargo": "Growth Marketing Manager",
+        "inicio": "2019-11",
+        "fim": "Atual",
+        "descricao": "Liderança de experimentos para aquisição e retenção de usuários."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Marketing",
+        "instituicao": "ESPM",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Reforge Growth Series", "Google Analytics Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Growth Hacking", "Marketing de Produto", "Análise de Dados"]
+  },
+  {
+    "id": 49,
+    "nome": "Hélio Costa",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "DBA (Administrador de Banco de Dados)",
+    "resumo": "Especialista em performance, tuning e manutenção de bancos de dados.",
+    "localizacao": "Brasília/DF",
+    "area": "Banco de Dados",
+    "habilidadesTecnicas": ["PostgreSQL", "MySQL", "Oracle", "Performance Tuning", "Backup/Recovery"],
+    "softSkills": ["Atenção ao Detalhe", "Organização", "Segurança", "Análise Crítica"],
+    "experiencias": [
+      {
+        "empresa": "DataBank",
+        "cargo": "DBA Sênior",
+        "inicio": "2015-01",
+        "fim": "Atual",
+        "descricao": "Gestão de bancos de dados de alta criticidade e otimização de queries."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciência da Computação",
+        "instituicao": "UnB",
+        "ano": 2014
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Oracle Certified Professional (OCP)", "PostgreSQL Certified Engineer"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Técnico" }
+    ],
+    "areaInteresses": ["Banco de Dados", "Performance", "Cloud Databases"]
+  },
+  {
+    "id": 50,
+    "nome": "Irene Gomes",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Analista de Requisitos",
+    "resumo": "Especialista em elicitação de requisitos e documentação funcional.",
+    "localizacao": "Niterói/RJ",
+    "area": "Análise",
+    "habilidadesTecnicas": ["Análise de Requisitos", "UML", "Casos de Uso", "User Stories", "Jira"],
+    "softSkills": ["Comunicação", "Escuta Ativa", "Documentação", "Negociação"],
+    "experiencias": [
+      {
+        "empresa": "Bridge Solutions",
+        "cargo": "Analista de Requisitos Sênior",
+        "inicio": "2017-08",
+        "fim": "Atual",
+        "descricao": "Ponte entre a área de negócios e a equipe de desenvolvimento."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "instituicao": "UFF",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Certified Professional for Requirements Engineering (CPRE)"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Intermediário" }
+    ],
+    "areaInteresses": ["Engenharia de Requisitos", "Processos de Negócio", "Agilidade"]
+  },
+  {
+    "id": 51,
+    "nome": "Jorge Esteves",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor C++",
+    "resumo": "Foco em sistemas de tempo real e software embarcado.",
+    "localizacao": "São Bernardo do Campo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["C++", "Qt", "Sistemas Embarcados", "Linux", "RTOS"],
+    "softSkills": ["Performance", "Lógica", "Atenção ao Detalhe", "Resolução de Problemas"],
+    "experiencias": [
+      {
+        "empresa": "Embedded Systems",
+        "cargo": "Desenvolvedor C++ Sênior",
+        "inicio": "2016-02",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de software para a indústria automotiva."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Computação",
+        "instituicao": "FEI",
+        "ano": 2015
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["C++ Certified Professional"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Sistemas Embarcados", "Tempo Real", "IoT"]
+  },
+  {
+    "id": 52,
+    "nome": "Laura Pinheiro",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Marketing de Conteúdo",
+    "resumo": "Focada em estratégia de conteúdo, SEO e Inbound Marketing.",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Marketing Digital",
+    "habilidadesTecnicas": ["Marketing de Conteúdo", "SEO", "Copywriting", "HubSpot", "Google Analytics"],
+    "softSkills": ["Criatividade", "Comunicação Escrita", "Estratégia", "Análise de Dados"],
+    "experiencias": [
+      {
+        "empresa": "Content Kings",
+        "cargo": "Coordenadora de Conteúdo",
+        "inicio": "2018-09",
+        "fim": "Atual",
+        "descricao": "Planejamento de pautas, gestão de redatores e otimização SEO."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Relações Públicas",
+        "instituicao": "PUCRS",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["HubSpot Inbound Marketing", "Rock Content Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Marketing de Conteúdo", "SEO", "Branding"]
+  },
+  {
+    "id": 53,
+    "nome": "Marcos Vinicius",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Engenheiro de QA (Automação)",
+    "resumo": "Especialista em automação de testes web e mobile com Cypress e Appium.",
+    "localizacao": "Fortaleza/CE",
+    "area": "Qualidade",
+    "habilidadesTecnicas": ["Cypress", "Selenium", "Appium", "JavaScript", "CI/CD"],
+    "softSkills": ["Atenção ao Detalhe", "Pensamento Crítico", "Automação", "Colaboração"],
+    "experiências": [
+      {
+        "empresa": "Testify",
+        "cargo": "Engenheiro de QA Sênior",
+        "inicio": "2018-11",
+        "fim": "Atual",
+        "descricao": "Criação de frameworks de testes automatizados e integração com CI/CD."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Software",
+        "instituicao": "UFC",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["ISTQB Advanced Level", "Cypress Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Automação de Testes", "DevOps", "Qualidade de Software"]
+  },
+  {
+    "id": 54,
+    "nome": "Natália Rocha",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Gerente de Produto Técnico (TPM)",
+    "resumo": "Focada na gestão de produtos de plataforma, APIs e infraestrutura.",
+    "localizacao": "São Paulo/SP",
+    "area": "Produto",
+    "habilidadesTecnicas": ["Gestão de Produto", "APIs", "Infraestrutura", "Roadmapping", "Agile"],
+    "softSkills": ["Comunicação Técnica", "Visão Estratégica", "Negociação", "Liderança"],
+    "experiencias": [
+      {
+        "empresa": "Platform Co.",
+        "cargo": "Technical Product Manager",
+        "inicio": "2019-04",
+        "fim": "Atual",
+        "descricao": "Gestão do roadmap de APIs e plataforma de desenvolvedores."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Computação",
+        "instituicao": "USP",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Certified Scrum Product Owner (CSPO)"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Gestão de Produto", "Plataformas", "APIs"]
+  },
+  {
+    "id": 55,
+    "nome": "Pedro Henrique",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Front-End Pleno",
+    "resumo": "Focado em Vue.js e performance web.",
+    "localizacao": "Ribeirão Preto/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Vue.js", "Nuxt.js", "JavaScript", "CSS", "Performance Web"],
+    "softSkills": ["Colaboração", "Aprendizado Contínuo", "Criatividade"],
+    "experiencias": [
+      {
+        "empresa": "VueDev",
+        "cargo": "Desenvolvedor Front-End Pleno",
+        "inicio": "2020-05",
+        "fim": "Atual",
+        "descricao": "Desenvolvimento de componentes e otimização de performance."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Sistemas para Internet",
+        "instituicao": "Fatec",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Vue.js Certified Developer"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Intermediário" }
+    ],
+    "areaInteresses": ["Vue.js", "Performance Web", "UX/UI"]
+  },
+  {
+    "id": 56,
+    "nome": "Quitória dos Santos",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Analista de People Analytics",
+    "resumo": "Especialista em análise de dados aplicada a Recursos Humanos.",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Recursos Humanos",
+    "habilidadesTecnicas": ["People Analytics", "Python", "SQL", "Tableau", "Estatística"],
+    "softSkills": ["Análise de Dados", "Visão de Negócio", "Comunicação", "Ética"],
+    "experiencias": [
+      {
+        "empresa": "HR Data",
+        "cargo": "People Analytics Specialist",
+        "inicio": "2019-09",
+        "fim": "Atual",
+        "descricao": "Análise de dados de turnover, engajamento e performance."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Psicologia",
+        "instituicao": "UFRJ",
+        "ano": 2017
+      },
+      {
+        "curso": "Pós-graduação em Data Science",
+        "instituicao": "PUC-Rio",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["People Analytics Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["People Analytics", "RH Estratégico", "Data Science"]
+  },
+  {
+    "id": 57,
+    "nome": "Roberto Dias",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Arquiteto de Soluções Cloud (Azure)",
+    "resumo": "Especialista em desenhar e implementar soluções na nuvem Microsoft Azure.",
+    "localizacao": "Brasília/DF",
+    "area": "Arquitetura",
+    "habilidadesTecnicas": ["Azure", "Terraform", "Kubernetes (AKS)", "Azure DevOps", "C#"],
+    "softSkills": ["Visão Estratégica", "Comunicação", "Liderança Técnica", "Resolução de Problemas"],
+    "experiencias": [
+      {
+        "empresa": "AzurePro",
+        "cargo": "Arquiteto de Soluções Sênior",
+        "inicio": "2017-06",
+        "fim": "Atual",
+        "descricao": "Desenho de arquiteturas cloud-native e migração de workloads para Azure."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Engenharia de Redes",
+        "instituicao": "UnB",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Microsoft Certified: Azure Solutions Architect Expert (AZ-305)"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Azure", "Cloud Native", "DevOps", "Segurança"]
+  },
+  {
+    "id": 58,
+    "nome": "Sandra Moreira",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Especialista em LGPD",
+    "resumo": "Focada em compliance e proteção de dados (LGPD/GDPR).",
+    "localizacao": "Curitiba/PR",
+    "area": "Segurança",
+    "habilidadesTecnicas": ["LGPD", "GDPR", "Privacy by Design", "Gestão de Riscos", "Compliance"],
+    "softSkills": ["Atenção ao Detalhe", "Organização", "Comunicação", "Ética"],
+    "experiencias": [
+      {
+        "empresa": "PrivacyFirst",
+        "cargo": "Analista de Proteção de Dados (DPO)",
+        "inicio": "2020-01",
+        "fim": "Atual",
+        "descricao": "Adequação de processos da empresa à LGPD e gestão de incidentes."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Direito",
+        "instituicao": "UFPR",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["CIPM", "CDPO (Certified Data Protection Officer)"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Proteção de Dados", "LGPD", "Compliance", "Segurança da Informação"]
+  },
+  {
+    "id": 59,
+    "nome": "Telma Borges",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Tech Recruiter",
+    "resumo": "Especialista em recrutamento e seleção para vagas de tecnologia.",
+    "localizacao": "São Paulo/SP",
+    "area": "Recursos Humanos",
+    "habilidadesTecnicas": ["Tech Recruiting", "Sourcing", "Entrevista Técnica", "LinkedIn Recruiter", "ATS"],
+    "softSkills": ["Comunicação", "Empatia", "Networking", "Persuasão"],
+    "experiencias": [
+      {
+        "empresa": "HireTech",
+        "cargo": "Senior Tech Recruiter",
+        "inicio": "2019-02",
+        "fim": "Atual",
+        "descricao": "Recrutamento de perfis complexos (Sênior, Liderança) em tecnologia."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Psicologia",
+        "instituicao": "Mackenzie",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Certified Tech Recruiter"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Recrutamento", "Gestão de Pessoas", "Tecnologia"]
+  },
+  {
+    "id": 60,
+    "nome": "William Pontes",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "SRE (Site Reliability Engineer)",
+    "resumo": "Focado em automação, observabilidade e escalabilidade de sistemas.",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["Kubernetes", "Prometheus", "Grafana", "Terraform", "Python"],
+    "softSkills": ["Resolução de Problemas", "Automação", "Pensamento Crítico", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "Reliable Systems",
+        "cargo": "SRE Pleno",
+        "inicio": "2019-07",
+        "fim": "Atual",
+        "descricao": "Garantia da confiabilidade e escalabilidade da plataforma."
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Ciência da Computação",
+        "instituicao": "UFMG",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Certified Kubernetes Administrator (CKA)", "Google SRE"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["SRE", "Observabilidade", "Sistemas Distribuídos", "DevOps"]
   }
 ]
