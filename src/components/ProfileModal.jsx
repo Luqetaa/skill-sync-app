@@ -1,41 +1,49 @@
 import React, { useState } from 'react';
-// Importando ícones
 import { 
-  FaTimes, // Ícone para fechar
-  FaBriefcase, // Ícone para Experiência
-  FaGraduationCap, // Ícone para Formação
-  FaTools, // Ícone para Skills
-  FaUser // Ícone para Visão Geral
+  FaTimes, 
+  FaBriefcase, 
+  FaGraduationCap, 
+  FaTools, 
+  FaUser 
 } from 'react-icons/fa';
 
-const ProfileModal = ({ profile, theme, onClose }) => {
-  // Estado interno para controlar a aba ativa
+// ALTERADO: Recebendo 'onToggleRecommend' e 'recomendados'
+const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados }) => {
   const [activeTab, setActiveTab] = useState('visaoGeral');
+  
+  // --- LÓGICA DO BOTÃO ---
+  
+  // Verifica se o perfil atual já está na lista
+  const isRecomendado = recomendados.includes(profile.id);
 
-  const buttonSecondary = theme === 'dark' ? 'bg-gray-700 hover:bg-gray-600 text-gray-200' : 'bg-gray-200 hover:bg-gray-300 text-gray-800';
+  // Define o estilo do botão de recomendar
+  const recommendButtonClasses = isRecomendado
+    ? 'bg-green-600 hover:bg-green-700 text-white' // Estilo "Recomendado"
+    : 'bg-(--secondary) hover:bg-(--secondary)/60 text-(--text)'; // Estilo Padrão
+  
+  // Define o estilo do botão de mensagem
+  const messageButtonClasses = theme === 'dark' 
+    ? 'bg-gray-700 hover:bg-gray-600 text-gray-200' 
+    : 'bg-gray-200 hover:bg-gray-300 text-gray-800';
 
-  // --- Handlers dos Botões (Requisito da Atividade) ---
-
-  const handleRecommend = () => {
-    alert(`Recomendação enviada para ${profile.nome}!`);
-  };
-
+  // Handler do Botão de Mensagem (sem alteração, mas removi o alert)
   const handleMessage = () => {
-    alert(`Abrindo chat com ${profile.nome}!`);
+    // Ação de mensagem (ex: abrir chat)
+    console.log(`Abrindo chat com ${profile.nome}`);
   };
 
   return (
-    // 1. Overlay (fundo escuro semi-transparente)
+    // Overlay
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4 transition-opacity duration-300"
-      onClick={onClose} // Fecha a modal ao clicar fora
+      onClick={onClose} 
     >
-      {/* 2. Conteúdo da Modal */}
+      {/* Conteúdo da Modal */}
       <div
         className={`relative w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-xl overflow-hidden flex flex-col bg-(--container)`}
-        onClick={(e) => e.stopPropagation()} // Impede de fechar ao clicar DENTRO
+        onClick={(e) => e.stopPropagation()} 
       >
-        {/* --- Cabeçalho da Modal --- */}
+        {/* Cabeçalho */}
         <div className={`p-5 border-b border-(--border-color) flex justify-between items-center`}>
           <h2 className={`text-2xl font-bold text-(--text)`}>Detalhes do Perfil</h2>
           <button
@@ -47,10 +55,10 @@ const ProfileModal = ({ profile, theme, onClose }) => {
           </button>
         </div>
 
-        {/* --- Corpo da Modal (com scroll) --- */}
+        {/* Corpo */}
         <div className="p-6 overflow-y-auto">
           
-          {/* --- Sumário do Perfil (Topo) --- */}
+          {/* Sumário do Perfil */}
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
             <img
               src={profile.foto}
@@ -62,19 +70,25 @@ const ProfileModal = ({ profile, theme, onClose }) => {
               <p className={`text-md text-(--text2)`}>{profile.cargo}</p>
               <p className={`text-sm text-(--text2) mt-1`}>{profile.localizacao}</p>
               
-              {/* Botões de Ação (Requisito) */}
+              {/* --- BOTÕES ALTERADOS --- */}
               <div className="mt-4 flex justify-center md:justify-start space-x-3">
-                <button onClick={handleRecommend} className={`px-4 py-2 rounded-lg text-sm font-medium bg-(--secondary) hover:bg-(--secondary)/60 text-(--text) transition-colors`}>
-                  Recomendar
+                <button 
+                  onClick={() => onToggleRecommend(profile)} // Chama a nova função
+                  className={`px-4 py-2 rounded-lg text-sm font-medium ${recommendButtonClasses} transition-colors`}
+                >
+                  {isRecomendado ? 'Recomendado ✔' : 'Recomendar'} 
                 </button>
-                <button onClick={handleMessage} className={`px-4 py-2 rounded-lg text-sm font-medium ${buttonSecondary} transition-colors`}>
+                <button 
+                  onClick={handleMessage} 
+                  className={`px-4 py-2 rounded-lg text-sm font-medium ${messageButtonClasses} transition-colors`}
+                >
                   Enviar Mensagem
                 </button>
               </div>
             </div>
           </div>
 
-          {/* --- Abas de Navegação --- */}
+          {/* Abas de Navegação (sem alteração) */}
           <div className={`mt-8 border-b border-(--border-color)`}>
             <nav className="-mb-px flex space-x-6" aria-label="Abas">
               <button
@@ -97,17 +111,16 @@ const ProfileModal = ({ profile, theme, onClose }) => {
               </button>
               <button
                 onClick={() => setActiveTab('formacao')}
-                className={`py-4 px-1 border-b-3 text-md ${activeTab === 'formacao' ? 'border-(--accent) font-bold text-(--accent)' : 'border-transparent text-gray-500 hover:text-gray-400'}`}
+                className={`py-4 px-1 border-b-3 text-md ${activeTab === 'formacao' ? 'border-(--accent) font-bold text-(--accent)' : 'border-transparent text-gray-400'}`}
               >
                 Formação
             </button>
             </nav>
           </div>
 
-          {/* --- Conteúdo das Abas --- */}
+          {/* Conteúdo das Abas (sem alteração) */}
           <div className="mt-6">
             
-            {/* Aba: Visão Geral */}
             {activeTab === 'visaoGeral' && (
               <div className="space-y-6">
                 <div>
@@ -124,7 +137,6 @@ const ProfileModal = ({ profile, theme, onClose }) => {
                     ))}
                   </ul>
                 </div>
-                {/* Certificações */}
                 {profile.certificacoes && profile.certificacoes.length > 0 && (
                   <div>
                     <h4 className={`text-lg font-semibold text-(--text)`}>Certificações</h4>
@@ -135,7 +147,6 @@ const ProfileModal = ({ profile, theme, onClose }) => {
                     </ul>
                   </div>
                 )}
-                {/* Área de Interesses */}
                 {profile.areaInteresses && profile.areaInteresses.length > 0 && (
                   <div>
                     <h4 className={`text-lg font-semibold text-(--text)`}>Área de Interesses</h4>
@@ -149,7 +160,6 @@ const ProfileModal = ({ profile, theme, onClose }) => {
               </div>
             )}
 
-            {/* Aba: Habilidades */}
             {activeTab === 'habilidades' && (
               <div className="space-y-6">
                 <div>
@@ -172,7 +182,6 @@ const ProfileModal = ({ profile, theme, onClose }) => {
                     ))}
                   </div>
                 </div>
-                {/* Projetos */}
                 {profile.projetos && profile.projetos.length > 0 && (
                   <div>
                     <h4 className={`text-lg font-semibold text-(--text)`}>Projetos</h4>
@@ -193,7 +202,6 @@ const ProfileModal = ({ profile, theme, onClose }) => {
               </div>
             )}
 
-            {/* Aba: Experiência */}
             {activeTab === 'experiencia' && (
               <div className="space-y-6">
                 {profile.experiencias.map((exp, i) => (
@@ -210,7 +218,6 @@ const ProfileModal = ({ profile, theme, onClose }) => {
               </div>
             )}
 
-            {/* Aba: Formação */}
             {activeTab === 'formacao' && (
               <div className="space-y-6">
                 {profile.formacao.map((form, i) => (
