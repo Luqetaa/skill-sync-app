@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+:root[data-theme="light"] {
+    --text: #07070d;
+    --text2: #302f36;
+    --texti: #ebebf4;
+    --background: #f0f0f3;
+    --primary: #444474;
+    --secondary: #a6a6d8;
+    --accent: #595995;
+    --container: #fffffff1;
+    --border-color: #e0e0e0;
+}
+:root[data-theme="dark"] {
+    --text: #ebebf4;
+    --text2: #c3bfd4;
+    --texti: #07070d;
+    --background: #07070d;
+    --primary: #a6a6d8;
+    --secondary: #31317c;
+    --accent: #b4e5ee;
+    --container: #1a1a20;
+    --border-color: #303038;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.toast-container.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.toast-content {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Verde para sucesso */
+.toast-success {
+  background-color: #28a745; 
+  color: white;
+}
+
+/* Azul para informação (remoção) */
+.toast-info {
+  background-color: #17a2b8;
+  color: white;
+}

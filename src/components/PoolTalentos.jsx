@@ -9,7 +9,7 @@ import ProfileCard from './ProfileCard';
 //
 const PoolTalentos = ({ perfis, theme, onCardClick }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {/* Mapeamos a lista de perfis e criamos um ProfileCard para cada um,
         passando as props necessárias para ele.
       */}

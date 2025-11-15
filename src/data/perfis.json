@@ -40,7 +40,6 @@
     "projetos": [
       {
         "titulo": "Plataforma de E-commerce",
-        "link": "https://github.com/anasilva/ecommerce",
         "descricao": "Aplicação completa de e-commerce com React e Node.js"
       }
     ],
@@ -77,7 +76,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Kubernetes Administrator", "AWS Solutions Architect"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -111,7 +115,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["PMP - Project Management Professional", "Scrum Master Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -145,7 +154,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Google Cloud Professional Data Engineer", "AWS Machine Learning Specialty"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -179,7 +193,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["CISSP", "CEH - Certified Ethical Hacker"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -213,7 +232,12 @@
         "ano": 2020
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Kubernetes Administrator", "AWS DevOps Engineer Professional"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -247,7 +271,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Google UX Design Certificate", "Interaction Design Specialist"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -281,7 +310,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Oracle Java Programmer", "Spring Professional Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -315,7 +349,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["ISTQB Certified Tester", "Selenium Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -349,7 +388,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["AWS Solutions Architect Professional", "TOGAF 9"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -383,7 +427,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Reforge Product Strategy", "Pragmatic Marketing Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -417,7 +466,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Apple Developer Certification", "Google Android Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -451,7 +505,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Google UX Design Certificate", "Interaction Design Specialist"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -485,7 +544,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["MERN Stack Certification", "GraphQL Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -519,7 +583,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Tableau Desktop Specialist", "Google Data Analytics Certificate"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -553,7 +622,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["AWS Solutions Architect Professional", "Azure Administrator Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -587,7 +661,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Certified Scrum Master", "SAFe Agilist"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -621,7 +700,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Python Professional Certification", "Django Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -655,7 +739,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["IIBA Certified Business Analyst", "UML Professional"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -689,7 +778,12 @@
         "ano": 2015
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Google Analytics Certified", "HubSpot Inbound Marketing Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -723,7 +817,12 @@
         "ano": 2014
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["CIPD HR Professional", "Talent Management Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -757,7 +856,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Unity Certified Developer", "Unreal Engine Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -791,7 +895,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["CEH - Certified Ethical Hacker", "OSCP - Offensive Security Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -825,7 +934,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Vue.js Certification", "Nuxt Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -859,7 +973,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["WCAG 2.1 Specialist", "Accessibility Auditor Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -893,7 +1012,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Angular Professional Certification", "RxJS Advanced Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -927,7 +1051,12 @@
         "ano": 2013
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Six Sigma Black Belt", "CMMI Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -961,7 +1090,12 @@
         "ano": 2020
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Ethereum Developer Certification", "Solidity Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -995,7 +1129,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["JMeter Certification", "LoadRunner Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1029,7 +1168,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Kong Certification", "API Design Specialist"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1063,7 +1207,12 @@
         "ano": 2020
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Python for Data Science"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1097,7 +1246,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["CCNA", "CISSP"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1131,7 +1285,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["ITIL Foundation"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1165,7 +1324,12 @@
         "ano": 2024
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Flutter Development Bootcamp"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1199,7 +1363,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Altium Designer Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1233,7 +1402,12 @@
         "ano": 2015
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["AWS Solutions Architect", "Certified ScrumMaster"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1267,7 +1441,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Community Management Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1301,7 +1480,12 @@
         "ano": 2020
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Google Cloud ML Engineer", "TensorFlow Developer Certificate"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1335,7 +1519,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Interaction Design Foundation Member"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1369,7 +1558,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Go (Golang) Specialization"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1403,7 +1597,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["AWS Data Analytics Specialty"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1437,7 +1636,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Ruby on Rails Development"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1471,7 +1675,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Microsoft Certified: Data Analyst Associate (PL-300)"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1505,7 +1714,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Nielsen Norman Group UX Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1539,7 +1753,12 @@
         "ano": 2015
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Microsoft Certified: Azure Developer Associate"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1573,7 +1792,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["UX Writing Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1607,7 +1831,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Zend Certified PHP Engineer", "Laravel Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1641,7 +1870,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Reforge Growth Series", "Google Analytics Certified"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1675,7 +1909,12 @@
         "ano": 2014
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Oracle Certified Professional (OCP)", "PostgreSQL Certified Engineer"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1709,7 +1948,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Certified Professional for Requirements Engineering (CPRE)"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1743,7 +1987,12 @@
         "ano": 2015
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["C++ Certified Professional"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1777,7 +2026,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["HubSpot Inbound Marketing", "Rock Content Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1811,7 +2065,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["ISTQB Advanced Level", "Cypress Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1845,7 +2104,12 @@
         "ano": 2017
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Certified Scrum Product Owner (CSPO)"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1879,7 +2143,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Vue.js Certified Developer"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1918,7 +2187,12 @@
         "ano": 2019
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["People Analytics Certification"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1952,7 +2226,12 @@
         "ano": 2016
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Microsoft Certified: Azure Solutions Architect Expert (AZ-305)"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -1986,7 +2265,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["CIPM", "CDPO (Certified Data Protection Officer)"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -2020,7 +2304,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Certified Tech Recruiter"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
@@ -2054,7 +2343,12 @@
         "ano": 2018
       }
     ],
-    "projetos": [],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
     "certificacoes": ["Certified Kubernetes Administrator (CKA)", "Google SRE"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo" },
