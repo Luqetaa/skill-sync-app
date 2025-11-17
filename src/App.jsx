@@ -1,170 +1,177 @@
 import React, { useState, useEffect } from 'react';
-import perfisData from '../public/perfis.json'; 
+import perfisData from './data/perfis.json'; 
+import { IoSearch } from "react-icons/io5";
 
-// --- ALTERADO: Importações ---
 import Header from './components/Header';
-import SidebarFiltros from './components/SidebarFiltros'; // Nome alterado
+import SidebarFiltros from './components/SidebarFiltros';
 import PoolTalentos from './components/PoolTalentos';
 import ProfileModal from './components/ProfileModal';
-import Paginacao from './components/Paginacao'; // NOVO: Componente de Paginação
+import Paginacao from './components/Paginacao'; 
+import Toast from './components/Toast'; 
 
-// --- NOVO: Constante de Paginação ---
 const ITEMS_PER_PAGE = 12;
 
 function App() {
   
-  // --- ESTADOS PRINCIPAIS ---
+  // ... (Todos os seus estados permanecem iguais) ...
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme ? savedTheme : 'light';
   });
-
   const [filtros, setFiltros] = useState({
     busca: '',
     area: '',
-    localizacao: ''
+    localizacao: '',
+    habilidadeTecnica: '',
+    softSkill: '',
+    nivelIngles: ''
   });
-
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProfile, setSelectedProfile] = useState(null);
   const [perfis, setPerfis] = useState(perfisData); 
-
-  // --- NOVO: Estado de Paginação ---
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeTab, setActiveTab] = useState('pool'); 
+  const [recomendados, setRecomendados] = useState(() => {
+    const savedRecomendados = localStorage.getItem('recomendados');
+    return savedRecomendados ? JSON.parse(savedRecomendados) : []; 
+  });
+  const [toast, setToast] = useState({ message: '', isVisible: false, type: 'success' });
 
-  // --- USE EFFECTS (AGORA CORRIGIDO) ---
-  
-  // 1. Salva o tema no localStorage
-  useEffect(() => {
-    localStorage.setItem('theme', theme);
-  }, [theme]);
-  
-  // 2. Rola para o topo quando clica na paginação (ex: 2, 3...)
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }, [currentPage]);
-
-  // 3. Reseta a página E rola para o topo QUANDO APLICAR UM FILTRO
-useEffect(() => {
-    // A lógica de scroll precisa estar AQUI DENTRO
-    
-    // Se já estamos na página 1, o useEffect [currentPage] (acima)
-    // não vai disparar. Então, forçamos o scroll "instantâneo" aqui.
-    if (currentPage === 1) {
-      window.scrollTo({
-        top: 0,
-        behavior: 'auto' // 'auto' é melhor para filtros
-      });
-    } else {
-      // Se estamos em outra página (2, 3...), apenas setar
-      // o estado para 1 vai disparar o useEffect [currentPage] acima.
-      setCurrentPage(1);
-    }
-  }, [filtros]); // Este hook "ouve" as mudanças nos filtros
-            
-  // --- HANDLERS (Funções de Evento) ---
-  const handleCardClick = (profile) => {
-    setSelectedProfile(profile);
-    setModalOpen(true);
+  // ... (Todas as suas funções e useEffects permanecem iguais) ...
+  const showToast = (message, type = 'success') => {
+    setToast({ message, isVisible: true, type });
+    setTimeout(() => {
+      setToast({ message: '', isVisible: false, type });
+    }, 3000);
   };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-    setSelectedProfile(null);
-  };
-
-  // Handler de Filtro (para Busca e Sidebar)
+  useEffect(() => { localStorage.setItem('theme', theme); }, [theme]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [currentPage]);
+  useEffect(() => {
+    if (currentPage === 1) { window.scrollTo({ top: 0, behavior: 'auto' }); } 
+    else { setCurrentPage(1); }
+  }, [filtros, activeTab]);
+  useEffect(() => { localStorage.setItem('recomendados', JSON.stringify(recomendados)); }, [recomendados]);
+  const handleCardClick = (profile) => { setSelectedProfile(profile); setModalOpen(true); };
+  const handleCloseModal = () => { setModalOpen(false); setSelectedProfile(null); };
   const handleFiltroChange = (e) => {
     const { name, value } = e.target;
-    setFiltros(prevFiltros => ({
-      ...prevFiltros,
-      [name]: value
-    }));
+    setFiltros(prevFiltros => ({ ...prevFiltros, [name]: value }));
   };
-
-  // --- LÓGICA DE RENDERIZAÇÃO ---
-  const backgroundClass = theme === 'dark' 
-    ? 'bg-gray-950 text-gray-100'
-    : 'bg-gray-100 text-gray-900';
-
-  // 1. Lógica para Filtros Dinâmicos (Sidebar)
+  const handleToggleRecommend = (profile) => {
+    setRecomendados((prevRecomendados) => {
+      if (prevRecomendados.includes(profile.id)) {
+        showToast(`${profile.nome} foi removido das recomendações.`, 'info'); 
+        return prevRecomendados.filter(id => id !== profile.id); 
+      }
+      showToast(`${profile.nome} foi recomendado!`, 'success'); 
+      return [...prevRecomendados, profile.id]; 
+    });
+  };
   const areasUnicas = [...new Set(perfis.map(p => p.area))].sort();
   const localizacoesUnicas = [...new Set(perfis.map(p => p.localizacao))].sort();
-
-  // 2. Lógica de Filtro (Perfis Filtrados)
+  const habilidadesTecnicasUnicas = [...new Set(perfis.flatMap(p => p.habilidadesTecnicas || []))].sort();
+  const softSkillsUnicas = [...new Set(perfis.flatMap(p => p.softSkills || []))].sort();
+  const niveisInglesUnicos = [...new Set(
+    perfis.flatMap(p => (p.idiomas || []).filter(i => i.idioma === 'Inglês').map(i => i.nivel))
+  )].sort();
   const perfisFiltrados = perfis.filter((profile) => {
     const buscaLower = filtros.busca.toLowerCase();
-    
     const matchBusca = buscaLower === '' ||
       profile.nome.toLowerCase().includes(buscaLower) ||
       profile.cargo.toLowerCase().includes(buscaLower);
-
     const matchArea = filtros.area === '' || profile.area === filtros.area;
     const matchLocalizacao = filtros.localizacao === '' || profile.localizacao === filtros.localizacao;
-
-    return matchBusca && matchArea && matchLocalizacao;
+    const matchHabilidadeTecnica = filtros.habilidadeTecnica === '' ||
+      (profile.habilidadesTecnicas && profile.habilidadesTecnicas.includes(filtros.habilidadeTecnica));
+    const matchSoftSkill = filtros.softSkill === '' ||
+      (profile.softSkills && profile.softSkills.includes(filtros.softSkill));
+    const matchNivelIngles = filtros.nivelIngles === '' ||
+      (profile.idiomas && profile.idiomas.some(i => i.idioma === 'Inglês' && i.nivel === filtros.nivelIngles));
+    return matchBusca && matchArea && matchLocalizacao && matchHabilidadeTecnica && matchSoftSkill && matchNivelIngles;
   });
-
-  // 3. --- NOVA LÓGICA DE PAGINAÇÃO ---
-  const totalPages = Math.ceil(perfisFiltrados.length / ITEMS_PER_PAGE);
+  const perfisParaExibir = activeTab === 'pool'
+    ? perfisFiltrados 
+    : perfisFiltrados.filter(p => recomendados.includes(p.id)); 
+  const totalPages = Math.ceil(perfisParaExibir.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
-  const perfisDaPagina = perfisFiltrados.slice(startIndex, endIndex);
+  const perfisDaPagina = perfisParaExibir.slice(startIndex, endIndex);
 
-  // Classes para o input de busca
-  const inputClasses = theme === 'dark'
-    ? 'bg-gray-800 border-gray-700 text-white focus:ring-blue-500 focus:border-blue-500'
-    : 'bg-white border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500';
-
-
-  // --- RETURN ATUALIZADO (NOVO LAYOUT) ---
+  // --- RETURN ---
   return (
-    <div className={`min-h-screen ${backgroundClass} transition-colors duration-200`}>
+    <div className={`min-h-screen bg-(--background) text-(--text) transition-colors duration-200`}>
+      
+      <Toast 
+        message={toast.message} 
+        isVisible={toast.isVisible} 
+        type={toast.type} 
+      />
       
       <Header theme={theme} setTheme={setTheme} />
 
-      {/* Container principal com layout flexível */}
       <div className="container mx-auto p-6 flex flex-col md:flex-row gap-8">
         
-        {/* Coluna da Esquerda: Sidebar de Filtros */}
         <SidebarFiltros
           theme={theme}
           setFiltros={setFiltros}
-          areas={areasUnicas} 
+          areas={areasUnicas}
           localizacoes={localizacoesUnicas}
+          habilidadesTecnicas={habilidadesTecnicasUnicas}
+          softSkills={softSkillsUnicas}
+          niveisIngles={niveisInglesUnicos}
         />
 
-        {/* Coluna da Direita: Conteúdo Principal */}
         <main className="flex-1">
           
-          <h2 className="text-3xl font-bold mb-2">Pool de Talentos</h2>
-          <p className={`mb-6 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+          {/* --- ALTERADO: Título responsivo --- */}
+          <h2 className="text-3xl md:text-5xl font-black mb-2">Pool de Talentos</h2>
+          <p className={`mb-6 text-(--text2)`}>
             Encontre os melhores profissionais para sua equipe.
           </p>
 
-          {/* Input de Busca (Movido para cá) */}
-          <div className="mb-6">
+          {/* --- ALTERADO: Adicionado 'flex-wrap' --- */}
+          <div className="mb-4 flex flex-wrap space-x-2 border-b-2 border-(--border-color)">
+            <button
+              onClick={() => setActiveTab('pool')}
+              className={`py-3 px-4 font-medium text-lg
+                ${activeTab === 'pool'
+                  ? 'border-b-4 border-(--accent) text-(--accent)'
+                  : 'text-(--text2) hover:text-(--text)'}
+              `}
+            >
+              Pool de Talentos
+            </button>
+            <button
+              onClick={() => setActiveTab('recomendados')}
+              className={`py-3 px-4 font-medium text-lg
+                ${activeTab === 'recomendados'
+                  ? 'border-b-4 border-(--accent) text-(--accent)'
+                  : 'text-(--text2) hover:text-(--text)'}
+              `}
+            >
+              Recomendados ({recomendados.length})
+            </button>
+          </div>
+
+          {/* Input de Busca (sem alteração) */}
+          <div className="mb-6 relative">
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-(--text2)"><IoSearch /></span>
             <input
               type="text"
-              name="busca" // O nome "busca" bate com o estado 'filtros'
+              name="busca"
               id="busca"
-              onChange={handleFiltroChange} // Usa o handler do App.jsx
-              className={`w-full p-3 rounded-md border ${inputClasses} transition-colors`}
-              placeholder="🔎 Buscar por cargo, habilidade ou nome..."
+              onChange={handleFiltroChange}
+              className={`w-full pl-10 p-3 rounded-lg border bg-(--container) border-(--border-color) text-(--text) focus:ring-(--primary) transition-colors`}
+              placeholder="Buscar por cargo, habilidade ou nome..."
             />
           </div>
 
-          {/* Pool de Talentos (Agora recebe os perfis paginados) */}
           <PoolTalentos
-            perfis={perfisDaPagina} // Passa apenas os 12 da página atual
+            perfis={perfisDaPagina} 
             theme={theme}
             onCardClick={handleCardClick}
           />
           
-          {/* Componente de Paginação */}
           {totalPages > 1 && (
              <Paginacao
               currentPage={currentPage}
@@ -177,12 +184,14 @@ useEffect(() => {
         </main>
       </div>
       
-      {/* Modal (sem alteração) */}
+      {/* Modal (sem alteração aqui) */}
       {modalOpen && (
         <ProfileModal 
           profile={selectedProfile} 
           theme={theme} 
           onClose={handleCloseModal} 
+          onToggleRecommend={handleToggleRecommend}
+          recomendados={recomendados}
         />
       )}
     </div>

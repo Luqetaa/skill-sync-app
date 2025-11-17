@@ -52,18 +52,13 @@ const Paginacao = ({ currentPage, totalPages, onPageChange, theme }) => {
     
     if (isActive) {
       // Estilo do botão ativo (azul)
-      return 'bg-blue-600 text-white';
+      return 'bg-(--accent) text-(--texti)';
     }
     
     // Estilo padrão (dark/light)
-    return theme === 'dark'
-      ? 'bg-gray-800 hover:bg-gray-700 text-gray-300'
-      : 'bg-white hover:bg-gray-100 text-gray-700';
-  };
+    return 'hover:bg-(--container) text-(--text)'
 
-  const iconClasses = theme === 'dark' 
-    ? 'text-gray-300 hover:text-white' 
-    : 'text-gray-600 hover:text-black';
+  };
 
   return (
     <nav className="flex items-center justify-center space-x-2 mt-10">
@@ -71,7 +66,7 @@ const Paginacao = ({ currentPage, totalPages, onPageChange, theme }) => {
       <button
         onClick={handlePrevious}
         disabled={currentPage === 1}
-        className={`p-2 rounded-md ${iconClasses} disabled:opacity-50 disabled:cursor-not-allowed`}
+        className={`p-2 rounded-lg text-(--text) hover:text-(--text)/70 disabled:opacity-50 disabled:cursor-not-allowed`}
       >
         <FaChevronLeft />
       </button>
@@ -81,7 +76,7 @@ const Paginacao = ({ currentPage, totalPages, onPageChange, theme }) => {
         page === '...' ? (
           <span
             key={`ellipsis-${index}`}
-            className={`px-4 py-2 rounded-md ${theme === 'dark' ? 'text-gray-500' : 'text-gray-400'}`}
+            className={`px-4 py-2 rounded-lg ${theme === 'dark' ? 'text-gray-500' : 'text-gray-400'}`}
           >
             ...
           </span>
@@ -89,7 +84,7 @@ const Paginacao = ({ currentPage, totalPages, onPageChange, theme }) => {
           <button
             key={page}
             onClick={() => onPageChange(page)}
-            className={`px-4 py-2 rounded-md font-medium text-sm transition-colors ${buttonClasses(page)}`}
+            className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${buttonClasses(page)}`}
           >
             {page}
           </button>
@@ -100,7 +95,7 @@ const Paginacao = ({ currentPage, totalPages, onPageChange, theme }) => {
       <button
         onClick={handleNext}
         disabled={currentPage === totalPages}
-        className={`p-2 rounded-md ${iconClasses} disabled:opacity-50 disabled:cursor-not-allowed`}
+        className={`p-2 rounded-lg text-(--text) hover:text-(--text)/70 disabled:opacity-50 disabled:cursor-not-allowed`}
       >
         <FaChevronRight />
       </button>
