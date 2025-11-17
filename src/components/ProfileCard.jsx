@@ -2,6 +2,8 @@
 import React from 'react';
 
 const ProfileCard = ({ profile, theme, onCardClick }) => {
+  const DEFAULT_FOTO = 'https://avatar.iran.liara.run/public';
+  const foto = profile.foto && profile.foto.trim() !== '' ? profile.foto : DEFAULT_FOTO;
 
   const mainSkills = profile.habilidadesTecnicas.slice(0, 3);
 
@@ -24,7 +26,7 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
         transition-all duration-200 ease-in-out
         transform hover:-translate-y-1 focus:outline-none
         focus:ring-2 focus:ring-(--primary) 
-        min-h-[21rem] 
+        min-h-84 
         flex flex-col /* Layout principal: vertical */
         bg-(--container) border-(--border-color) hover:bg-(--container)/20
         cursor-pointer 
@@ -40,7 +42,7 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
         {/* --- ALTERADO: Removi o <div> extra que estava aqui --- */}
         {/* Agora a imagem e o texto são filhos diretos do container centralizado */}
         <img
-          src={profile.foto}
+          src={foto}
           alt={`Foto de ${profile.nome}`}
           className="w-24 h-24 rounded-full object-cover border-2 border-(--border-color)"
         />
