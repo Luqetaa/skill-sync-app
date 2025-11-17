@@ -4,11 +4,14 @@ import {
   FaBriefcase, 
   FaGraduationCap, 
   FaTools, 
+  FaExternalLinkAlt,
   FaUser 
 } from 'react-icons/fa';
 
 const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados }) => {
   const [activeTab, setActiveTab] = useState('visaoGeral');
+  const DEFAULT_FOTO = 'https://avatar.iran.liara.run/public';
+  const foto = profile?.foto && profile.foto.trim() !== '' ? profile.foto : DEFAULT_FOTO;
   
   const isRecomendado = recomendados.includes(profile.id);
   const recommendButtonClasses = isRecomendado
@@ -47,7 +50,7 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
           {/* --- ALTERADO: O sumário já era responsivo (md:flex-row), mas vamos garantir o padding no mobile --- */}
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 p-1">
             <img
-              src={profile.foto}
+              src={foto}
               alt={profile.nome}
               className="w-28 h-28 rounded-full object-cover border-4 border-gray-100 dark:border-gray-600"
             />
@@ -97,7 +100,7 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
               </button>
               <button
                 onClick={() => setActiveTab('formacao')}
-                className={`py-4 px-1 border-b-3 text-md ${activeTab === 'formacao' ? 'border-(--accent) font-bold text-(--accent)' : 'border-transparent text-gray-400'}`}
+                className={`py-4 px-1 border-b-3 text-md ${activeTab === 'formacao' ? 'border-(--accent) font-bold text-(--accent)' : 'border-transparent text-gray-500 hover:text-gray-400'}`}
               >
                 Formação
             </button>
@@ -178,6 +181,12 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
                             <>
                               <strong>{proj.titulo}</strong>
                               {proj.descricao && <> — {proj.descricao}</>}
+                              {proj.link && (
+                                <>
+                                  {' '}
+                                  — <a href={proj.link} target="_blank" rel="noopener noreferrer" className="text-(--accent) hover:underline inline-flex items-center gap-1">Abrir projeto <FaExternalLinkAlt className="w-3 h-3" /></a>
+                                </>
+                              )}
                             </>
                           )}
                         </li>
