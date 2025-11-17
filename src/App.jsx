@@ -3,6 +3,7 @@ import perfisData from './data/perfis.json';
 import { IoSearch } from "react-icons/io5";
 
 import Header from './components/Header';
+import NovoPerfilForm from './components/NovoPerfilForm';
 import SidebarFiltros from './components/SidebarFiltros';
 import PoolTalentos from './components/PoolTalentos';
 import ProfileModal from './components/ProfileModal';
@@ -12,6 +13,7 @@ import Toast from './components/Toast';
 const ITEMS_PER_PAGE = 12;
 
 function App() {
+  const DEFAULT_FOTO = 'https://avatar.iran.liara.run/public';
   
   // ... (Todos os seus estados permanecem iguais) ...
   const [theme, setTheme] = useState(() => {
@@ -28,7 +30,18 @@ function App() {
   });
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProfile, setSelectedProfile] = useState(null);
-  const [perfis, setPerfis] = useState(perfisData); 
+  const [novoPerfilModalOpen, setNovoPerfilModalOpen] = useState(false);
+  const [fotoNovoPerfil, setFotoNovoPerfil] = useState(() => {
+    const saved = localStorage.getItem('fotoNovoPerfil');
+    return saved || '';
+  });
+  const [perfis, setPerfis] = useState(() => {
+    const localPerfis = localStorage.getItem('perfisExtra');
+    if (localPerfis) {
+      return [...perfisData, ...JSON.parse(localPerfis)];
+    }
+    return perfisData;
+  });
   const [currentPage, setCurrentPage] = useState(1);
   const [activeTab, setActiveTab] = useState('pool'); 
   const [recomendados, setRecomendados] = useState(() => {
@@ -45,6 +58,16 @@ function App() {
     }, 3000);
   };
   useEffect(() => { localStorage.setItem('theme', theme); }, [theme]);
+  useEffect(() => {
+    // Salva perfis extras no localStorage
+    const extras = perfis.filter(p => !perfisData.some(orig => orig.id === p.id));
+    localStorage.setItem('perfisExtra', JSON.stringify(extras));
+  }, [perfis]);
+  useEffect(() => {
+    if (fotoNovoPerfil) {
+      localStorage.setItem('fotoNovoPerfil', fotoNovoPerfil);
+    }
+  }, [fotoNovoPerfil]);
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [currentPage]);
   useEffect(() => {
     if (currentPage === 1) { window.scrollTo({ top: 0, behavior: 'auto' }); } 
@@ -100,17 +123,18 @@ function App() {
   // --- RETURN ---
   return (
     <div className={`min-h-screen bg-(--background) text-(--text) transition-colors duration-200`}>
-      
       <Toast 
         message={toast.message} 
         isVisible={toast.isVisible} 
         type={toast.type} 
       />
-      
-      <Header theme={theme} setTheme={setTheme} />
-
+      <Header 
+        theme={theme} 
+        setTheme={setTheme}
+        fotoNovoPerfil={fotoNovoPerfil}
+        onNovoPerfilClick={() => setNovoPerfilModalOpen(true)}
+      />
       <div className="container mx-auto p-6 flex flex-col md:flex-row gap-8">
-        
         <SidebarFiltros
           theme={theme}
           setFiltros={setFiltros}
@@ -120,16 +144,11 @@ function App() {
           softSkills={softSkillsUnicas}
           niveisIngles={niveisInglesUnicos}
         />
-
         <main className="flex-1">
-          
-          {/* --- ALTERADO: Título responsivo --- */}
           <h2 className="text-3xl md:text-5xl font-black mb-2">Pool de Talentos</h2>
           <p className={`mb-6 text-(--text2)`}>
             Encontre os melhores profissionais para sua equipe.
           </p>
-
-          {/* --- ALTERADO: Adicionado 'flex-wrap' --- */}
           <div className="mb-4 flex flex-wrap space-x-2 border-b-2 border-(--border-color)">
             <button
               onClick={() => setActiveTab('pool')}
@@ -152,8 +171,6 @@ function App() {
               Recomendados ({recomendados.length})
             </button>
           </div>
-
-          {/* Input de Busca (sem alteração) */}
           <div className="mb-6 relative">
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-(--text2)"><IoSearch /></span>
             <input
@@ -165,13 +182,11 @@ function App() {
               placeholder="Buscar por cargo, habilidade ou nome..."
             />
           </div>
-
           <PoolTalentos
             perfis={perfisDaPagina} 
             theme={theme}
             onCardClick={handleCardClick}
           />
-          
           {totalPages > 1 && (
              <Paginacao
               currentPage={currentPage}
@@ -180,11 +195,23 @@ function App() {
               theme={theme}
             />
           )}
-         
         </main>
       </div>
-      
-      {/* Modal (sem alteração aqui) */}
+      {/* Modal de cadastro de novo perfil */}
+      {novoPerfilModalOpen && (
+        <NovoPerfilForm
+          onPerfilCriado={(novoPerfil) => {
+            const fotoFinal = novoPerfil.foto && novoPerfil.foto.trim() !== '' ? novoPerfil.foto : DEFAULT_FOTO;
+            const perfilComFoto = { ...novoPerfil, foto: fotoFinal };
+            setPerfis(prev => [...prev, perfilComFoto]);
+            setFotoNovoPerfil(fotoFinal);
+            setNovoPerfilModalOpen(false);
+            showToast('Perfil cadastrado com sucesso!', 'success');
+          }}
+          onClose={() => setNovoPerfilModalOpen(false)}
+        />
+      )}
+      {/* Modal de perfil */}
       {modalOpen && (
         <ProfileModal 
           profile={selectedProfile} 
