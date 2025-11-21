@@ -15,20 +15,14 @@ Esta aplicação é uma Single Page Application (SPA) construída com **React** 
 
 ## ✨ Features Implementadas
 
-Este projeto cumpre todos os requisitos obrigatórios da atividade:
-
 * **Listagem de Perfis:** Perfis carregados dinamicamente de um arquivo `perfis.json` local.
 * **Cards de Perfil:** Apresentação limpa com nome, foto, cargo e principais *skills*.
 * **Modal Interativa:** Ao clicar em um card, uma modal exibe dados detalhados do profissional, organizada por abas (Visão Geral, Habilidades, Experiência, etc.).
-* **Botões Funcionais:** Botões de "Recomendar" e "Enviar Mensagem" dentro da modal com feedback visual (`alert`).
+* **Recomendar Perfis:** Botão de "Recomendar" dentro da modal com feedback visual (`alert`).
 * **Sistema de Filtros:** Filtros funcionais para busca por texto (nome/cargo), Área e Localização.
 * **Filtros Dinâmicos:** As opções de filtro de "Área" e "Localização" são geradas automaticamente a partir dos dados do JSON, sem valores duplicados.
 * **Design Responsivo:** A aplicação se adapta a diferentes tamanhos de tela (mobile, tablet, desktop) usando Tailwind CSS.
 * **Dark Mode:** Um seletor de tema (Light/Dark) funcional e persistente (salva no `localStorage`), implementado inteiramente com lógica de estado do React, sem o uso da variante `dark:` do Tailwind.
-
-## 🔐 Usuários e Senhas
-
-Não se aplica. A aplicação é de acesso público e não possui sistema de login ou autenticação.
 
 ## 🛠️ Instalação e Execução do Projeto
 
