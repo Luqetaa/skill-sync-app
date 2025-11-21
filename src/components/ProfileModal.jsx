@@ -46,8 +46,7 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
         </div>
 
         <div className="p-6 overflow-y-auto">
-          
-          {/* --- ALTERADO: O sumário já era responsivo (md:flex-row), mas vamos garantir o padding no mobile --- */}
+          {/* Seção de Cabeçalho do Perfil */}
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 p-1">
             <img
               src={foto}
@@ -58,8 +57,6 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
               <h3 className={`text-2xl font-bold text-(--text)`}>{profile.nome}</h3>
               <p className={`text-md text-(--text2)`}>{profile.cargo}</p>
               <p className={`text-sm text-(--text2) mt-1`}>{profile.localizacao}</p>
-              
-              {/* --- ALTERADO: Botões agora quebram a linha no mobile --- */}
               <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-3">
                 <button 
                   onClick={() => onToggleRecommend(profile)} 
@@ -77,7 +74,6 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
             </div>
           </div>
 
-          {/* --- ALTERADO: Abas de Navegação com 'flex-wrap' --- */}
           <div className={`mt-8 border-b border-(--border-color)`}>
             <nav className="-mb-px flex flex-wrap space-x-6" aria-label="Abas">
               <button
@@ -107,9 +103,7 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
             </nav>
           </div>
 
-          {/* --- Conteúdo das Abas (sem alteração) --- */}
           <div className="mt-6">
-            {/* ... (o conteúdo das abas permanece o mesmo) ... */}
             {activeTab === 'visaoGeral' && (
               <div className="space-y-6">
                 <div>

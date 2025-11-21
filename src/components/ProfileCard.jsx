@@ -1,4 +1,3 @@
-// src/components/ProfileCard.jsx
 import React from 'react';
 
 const ProfileCard = ({ profile, theme, onCardClick }) => {
@@ -7,7 +6,6 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
 
   const mainSkills = profile.habilidadesTecnicas.slice(0, 3);
 
-  // Handler para acessibilidade (teclado)
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
       onCardClick(profile);
@@ -15,7 +13,6 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
   };
 
   return (
-    // Elemento principal (div em vez de button)
     <div
       onClick={() => onCardClick(profile)}
       onKeyDown={handleKeyDown}
@@ -32,15 +29,8 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
         cursor-pointer 
       `}
     >
-      {/* --- CORREÇÃO ---
-        Este div é o container principal do conteúdo.
-        As classes 'items-center' e 'text-center' são as 
-        responsáveis por centralizar tudo.
-      */}
       <div className="flex flex-col items-center text-center flex-1"> 
         
-        {/* --- ALTERADO: Removi o <div> extra que estava aqui --- */}
-        {/* Agora a imagem e o texto são filhos diretos do container centralizado */}
         <img
           src={foto}
           alt={`Foto de ${profile.nome}`}
@@ -53,10 +43,8 @@ const ProfileCard = ({ profile, theme, onCardClick }) => {
           {profile.cargo}
         </p>
         
-        {/* Spacer: Este div com 'flex-1' empurra as skills para o final */}
         <div className="flex-1"></div> 
         
-        {/* Container das Skills (que já tinha justify-center) */}
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           {mainSkills.map((skill) => (
             <span

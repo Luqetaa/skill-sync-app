@@ -15,7 +15,6 @@ const ITEMS_PER_PAGE = 12;
 function App() {
   const DEFAULT_FOTO = 'https://avatar.iran.liara.run/public';
   
-  // ... (Todos os seus estados permanecem iguais) ...
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme ? savedTheme : 'light';
@@ -50,7 +49,6 @@ function App() {
   });
   const [toast, setToast] = useState({ message: '', isVisible: false, type: 'success' });
 
-  // ... (Todas as suas funções e useEffects permanecem iguais) ...
   const showToast = (message, type = 'success') => {
     setToast({ message, isVisible: true, type });
     setTimeout(() => {
@@ -120,7 +118,6 @@ function App() {
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const perfisDaPagina = perfisParaExibir.slice(startIndex, endIndex);
 
-  // --- RETURN ---
   return (
     <div className={`min-h-screen bg-(--background) text-(--text) transition-colors duration-200`}>
       <Toast 
