@@ -1,16 +1,13 @@
-// NovoPerfilForm.jsx
 import React, { useState, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
-// Importaremos o componente de localização que criaremos abaixo
 import AutocompleteLocalizacao from './AutocompleteLocalizacao';
 
-// Estado inicial para um novo perfil, espelhando seu JSON
 const initialState = {
   nome: '',
   foto: '',
   cargo: '',
   resumo: '',
-  localizacao: '', // Será preenchido pelo Autocomplete
+  localizacao: '', 
   area: '',
   habilidadesTecnicas: [],
   softSkills: [],
@@ -18,7 +15,7 @@ const initialState = {
   formacao: [],
   projetos: [],
   certificacoes: [],
-  idiomas: [{ idioma: 'Português', nivel: 'Nativo' }], // Pré-populado
+  idiomas: [{ idioma: 'Português', nivel: 'Nativo' }], 
   areaInteresses: [],
 };
 
@@ -26,20 +23,17 @@ const NovoPerfilForm = ({ onPerfilCriado, onClose }) => {
   const [perfil, setPerfil] = useState(initialState);
   const [activeTab, setActiveTab] = useState('basico');
 
-  // --- 1. Handler para Campos Simples ---
-  // (nome, cargo, resumo, area, foto)
   const handleChangeSimples = (e) => {
     const { name, value } = e.target;
     setPerfil((prev) => ({ ...prev, [name]: value }));
   };
 
-  // --- 2. Handlers para Listas Dinâmicas (Ex: Experiências) ---
   const addExperiencia = () => {
     setPerfil((prev) => ({
       ...prev,
       experiencias: [
         ...prev.experiencias,
-        { empresa: '', cargo: '', inicio: '', fim: '', descricao: '' }, // Novo obj vazio
+        { empresa: '', cargo: '', inicio: '', fim: '', descricao: '' }, 
       ],
     }));
   };
@@ -49,7 +43,7 @@ const NovoPerfilForm = ({ onPerfilCriado, onClose }) => {
       ...prev,
       formacao: [
         ...prev.formacao,
-        { curso: '', instituicao: '', ano: '' }, // Novo obj vazio
+        { curso: '', instituicao: '', ano: '' }, 
       ],
     }));
   };
@@ -81,8 +75,6 @@ const NovoPerfilForm = ({ onPerfilCriado, onClose }) => {
     novasFormacao[index][name] = value;
     setPerfil((prev) => ({ ...prev, formacao: novasFormacao }));
   };
-  // --- 3. Handlers para Tags (Ex: Habilidades Técnicas) ---
-  // (Este é um padrão melhor do que usar split(','))
   const [habilidadeAtual, setHabilidadeAtual] = useState('');
   const [softSkillAtual, setSoftSkillAtual] = useState('');
   const [certificacaoAtual, setCertificacaoAtual] = useState('');
@@ -95,7 +87,7 @@ const NovoPerfilForm = ({ onPerfilCriado, onClose }) => {
         ...prev,
         habilidadesTecnicas: [...prev.habilidadesTecnicas, habilidadeAtual.trim()],
       }));
-      setHabilidadeAtual(''); // Limpa o input
+      setHabilidadeAtual('');
     }
   };
 
@@ -159,14 +151,11 @@ const NovoPerfilForm = ({ onPerfilCriado, onClose }) => {
       habilidadesTecnicas: prev.habilidadesTecnicas.filter((h) => h !== tag),
     }));
   };
-  // (Repita o padrão acima para softSkills, certificacoes, areaInteresses)
 
-  // --- 4. Handler para Localização (do Autocomplete) ---
   const handleLocationSelect = (local) => {
     setPerfil((prev) => ({ ...prev, localizacao: local }));
   };
 
-  // --- Idiomas (lista dinâmica: idioma + nivel) ---
   const addIdioma = () => {
     setPerfil((prev) => ({
       ...prev,
@@ -187,7 +176,6 @@ const NovoPerfilForm = ({ onPerfilCriado, onClose }) => {
     setPerfil((prev) => ({ ...prev, idiomas: novos }));
   };
 
-  // --- Projetos (lista dinâmica com título e descrição) ---
   const addProjeto = () => {
     setPerfil((prev) => ({
       ...prev,
@@ -209,28 +197,18 @@ const NovoPerfilForm = ({ onPerfilCriado, onClose }) => {
     setPerfil((prev) => ({ ...prev, projetos: novos }));
   };
 
-  // --- 5. Submit ---
   const handleSubmit = (e) => {
     e.preventDefault();
     const novoPerfil = { ...perfil, id: Date.now() };
-    
-    // Adicionar o nível de inglês (se você ainda quiser da forma simples)
-    // Se não, você deve tratar 'idiomas' como uma lista dinâmica, igual a 'experiencias'
-    // const nivelIngles = document.getElementById('nivelIngles')?.value;
-    // if (nivelIngles) {
-    //   novoPerfil.idiomas.push({ idioma: 'Inglês', nivel: nivelIngles });
-    // }
-
     console.log('Perfil Criado:', novoPerfil);
     onPerfilCriado(novoPerfil);
-    setPerfil(initialState); // Reseta o formulário
+    setPerfil(initialState); 
   };
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4 transition-opacity duration-300"
       onClick={(e) => {
-        // Fecha o modal apenas se clicar no fundo, não no conteúdo
         if (e.target === e.currentTarget) onClose();
       }}
     >

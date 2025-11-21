@@ -1,8 +1,5 @@
-// AutocompleteLocalizacao.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 
-// Função 'debounce' para evitar muitas chamadas à API
-// (Coloque fora do componente ou importe de um 'utils')
 function debounce(func, delay) {
   let timeout;
   return function(...args) {
@@ -26,11 +23,8 @@ const AutocompleteLocalizacao = ({ onSelect }) => {
     }
     setLoading(true);
     try {
-      // Usamos a API do IBGE para buscar municípios
       const response = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/municipios`);
       const data = await response.json();
-      
-      // Filtra os resultados que contêm o texto da busca (ignorando acentos)
       const filtered = data.filter((cidade) => 
         cidade.nome.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
           .includes(searchQuery.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
@@ -48,27 +42,25 @@ const AutocompleteLocalizacao = ({ onSelect }) => {
     setLoading(false);
   };
 
-  // Aplica o debounce na função de busca
   const debouncedFetch = useCallback(debounce(fetchCidades, 500), []);
 
   useEffect(() => {
-    // Se o 'query' não for o item selecionado, busca
+
     if (query !== selected) {
       debouncedFetch(query);
     }
   }, [query, debouncedFetch, selected]);
 
   const handleSelect = (cidade) => {
-    const localFormatado = cidade.nome; // Ex: "São Paulo/SP"
+    const localFormatado = cidade.nome; 
     setQuery(localFormatado);
     setSelected(localFormatado);
     setSuggestions([]);
-    onSelect(localFormatado); // Envia o valor formatado para o form principal
+    onSelect(localFormatado); 
   };
 
   const handleChange = (e) => {
     setQuery(e.target.value);
-    // Se o usuário apagar o input, limpa a seleção
     if (e.target.value === '') {
       setSelected('');
       onSelect('');

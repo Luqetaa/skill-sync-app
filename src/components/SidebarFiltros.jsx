@@ -1,7 +1,5 @@
 import React from 'react';
 import { IoChevronDown } from "react-icons/io5";
-
-// Recebe 'theme', 'setFiltros', 'areas' e 'localizacoes' do App.jsx
 const SidebarFiltros = ({ theme, setFiltros, areas = [], localizacoes = [], habilidadesTecnicas = [], softSkills = [], niveisIngles = [] }) => {
 
   const handleFiltroChange = (e) => {
@@ -13,13 +11,11 @@ const SidebarFiltros = ({ theme, setFiltros, areas = [], localizacoes = [], habi
     }));
   };
 
-  // Classes do container da sidebar
-
   return (
     // Container da Sidebar
     <aside className={`w-full md:w-72 rounded-2xl text-(--text)/80 py-13`}>
       <h3 className="text-xl font-bold mb-6 text-(--text)">Filtros</h3>
-      {/* 1. Filtro de Área (Dinâmico) */}
+      {/* 1. Filtro de Área */}
       <div className="mb-6 relative">
         <select
           name="area"
@@ -37,7 +33,7 @@ const SidebarFiltros = ({ theme, setFiltros, areas = [], localizacoes = [], habi
         </span>
       </div>
 
-      {/* 2. Filtro de Localização (Dinâmico) */}
+      {/* 2. Filtro de Localização */}
       <div className="relative mb-6">
         <select
           name="localizacao"
@@ -108,7 +104,6 @@ const SidebarFiltros = ({ theme, setFiltros, areas = [], localizacoes = [], habi
           <IoChevronDown />
         </span>
       </div>
-      {/* Adicione outros filtros (Nível, Disponibilidade) aqui no futuro */}
     </aside>
   );
 };

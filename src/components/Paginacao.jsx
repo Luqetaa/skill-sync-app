@@ -1,29 +1,23 @@
 import React from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-// Função para gerar os números da página com ellipsis
 const getPageNumbers = (currentPage, totalPages, pageRange = 2) => {
   const pages = [];
-  
-  // Adiciona a primeira página
+
   if (totalPages > 0) pages.push(1);
 
-  // Ellipsis inicial
   if (currentPage > pageRange + 2) {
     pages.push('...');
   }
 
-  // Páginas centrais
   for (let i = Math.max(2, currentPage - pageRange); i <= Math.min(totalPages - 1, currentPage + pageRange); i++) {
     pages.push(i);
   }
 
-  // Ellipsis final
   if (currentPage < totalPages - pageRange - 1) {
     pages.push('...');
   }
 
-  // Adiciona a última página
   if (totalPages > 1) {
     pages.push(totalPages);
   }
@@ -51,11 +45,10 @@ const Paginacao = ({ currentPage, totalPages, onPageChange, theme }) => {
     const isActive = page === currentPage;
     
     if (isActive) {
-      // Estilo do botão ativo (azul)
       return 'bg-(--accent) text-(--texti)';
     }
     
-    // Estilo padrão (dark/light)
+
     return 'hover:bg-(--container) text-(--text)'
 
   };
