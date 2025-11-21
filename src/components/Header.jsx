@@ -33,12 +33,8 @@ const Header = ({ theme, setTheme, fotoNovoPerfil, onNovoPerfilClick }) => {
             className={`w-10 h-10 rounded-full flex items-center justify-center bg-(--accent) hover:bg-(--accent)/80 transition-colors shadow-md overflow-hidden`}
             aria-label="Cadastrar novo perfil"
             style={{ border: '2px solid var(--border-color)' }}
-          >
-            {fotoNovoPerfil ? (
-              <img src={fotoNovoPerfil} alt="Novo perfil" className="w-full h-full object-cover rounded-full" />
-            ) : (
-              <IoMdAdd className="text-(--texti) text-2xl" />
-            )}
+          >            
+          <IoMdAdd className="text-(--texti) text-2xl" />
           </button>
           <button
             onClick={handleThemeSwitch}
