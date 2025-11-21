@@ -36,7 +36,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [LINK-DO-SEU-REPOSITORIO-AQUI]
+    git clone https://github.com/Luqetaa/skill-sync-app.git
     ```
 
 2.  **Acesse a pasta do projeto:**
@@ -61,5 +61,5 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 ## 🌐 Links do Projeto
 
-* **Link do Repositório:** `[COLOQUE O LINK DO SEU REPOSITÓRIO DO GITHUB AQUI]`
-* **Link do Deploy (Vercel/Netlify):** `[COLOQUE O LINK DO SEU DEPLOY AQUI]`
+* **Link do Repositório:** `https://github.com/Luqetaa/skill-sync-app`
+* **Link do Deploy (Vercel/Netlify):** `https://skill-sync-app-black.vercel.app/`
